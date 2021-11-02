@@ -61,3 +61,10 @@ Route::get('/deretbilangan/{deret}', function($deret){
         }
     }
 });
+
+Route::get('/person', 'PersonController@index');
+//person adalah nama controller dan personcontroller lebih spesifik dan index itu didalam personcontroller\
+
+Route::get('/person/show/{param}', 'PersonController@show');
+Route::resource('/student', 'StudentController');
+//Menambah resourse tinggal panggil class pada / nya
