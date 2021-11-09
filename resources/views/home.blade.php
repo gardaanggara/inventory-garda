@@ -4,7 +4,7 @@
 
 <htmml>
 <head>
-    <h1> Welcome to Home : {{$name}} </h1>
+    <h1> Welcome to Home : {{$contoh}} </h1>
 
 
 

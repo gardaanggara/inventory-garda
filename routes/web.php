@@ -70,7 +70,10 @@ Route::resource('/student', 'StudentController');
 //Menambah resourse tinggal panggil class pada / nya
 
 Route::get('/homepage', function(){
-    return view('home', ["name" => "Rudy Sofyan"]);
+    return view('home', ["contoh" => "Rudy Sofyan"]);
 });
 //Membuat Route View
 //name adalah variabel yang dipanggil dari view home yang bernilai "Rudy Sofyan"
+
+Route::get('/person', "PersonController@index");
+Route::get('/person/sendData', "PersonController@sendData");
