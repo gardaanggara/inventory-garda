@@ -66,7 +66,7 @@ Route::get('/person', 'PersonController@index');
 //person adalah nama controller dan personcontroller lebih spesifik dan index itu didalam personcontroller\
 
 Route::get('/person/show/{param}', 'PersonController@show');
-Route::resource('/student', 'StudentController');
+// Route::resource('/student', 'StudentController');
 //Menambah resourse tinggal panggil class pada / nya
 
 Route::get('/homepage', function(){
@@ -77,3 +77,6 @@ Route::get('/homepage', function(){
 
 Route::get('/person', "PersonController@index");
 Route::get('/person/sendData', "PersonController@sendData");
+Route::get('/student/my-academic{name}', function($name){
+    return "Hello " . $name;
+});
