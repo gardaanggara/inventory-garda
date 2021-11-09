@@ -68,3 +68,9 @@ Route::get('/person', 'PersonController@index');
 Route::get('/person/show/{param}', 'PersonController@show');
 Route::resource('/student', 'StudentController');
 //Menambah resourse tinggal panggil class pada / nya
+
+Route::get('/homepage', function(){
+    return view('home', ["name" => "Rudy Sofyan"]);
+});
+//Membuat Route View
+//name adalah variabel yang dipanggil dari view home yang bernilai "Rudy Sofyan"
