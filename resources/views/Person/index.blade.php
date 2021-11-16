@@ -1,3 +1,5 @@
-<html>
-    <h1> Welcome </h1>
-</html>
+@extends("app")
+
+@section("content")
+    <h1> Index Person </h1>
+@stop
