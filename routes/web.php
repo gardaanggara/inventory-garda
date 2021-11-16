@@ -77,6 +77,6 @@ Route::get('/homepage', function(){
 
 Route::get('/person', "PersonController@index");
 Route::get('/person/sendData', "PersonController@sendData");
-Route::get('/student/my-academic{name}', function($name){
-    return "Hello " . $name;
-});
+Route::get('/student/my-academic{course}/{task}/{quiz}/{mid}/{final}', 'StudentController@myCourse');
+Route::get('/person/add', 'PersonController@add');
+Route::get('/person/addProcess', 'PersonController@addProcess');

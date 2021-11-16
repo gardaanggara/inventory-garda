@@ -29,4 +29,16 @@ class PersonController extends Controller
         $name = $this->name;
         return view("person.sendData", compact('code','name'));
 }
+
+    public function add(){
+        return view('person.add');
+    }
+
+    public function addProcess(Request $request){
+        $this->validate($request,['
+        person_name' => 'required|max:30', '
+        person_email' => 'required|email']);
+
+        return view('person.show', ['data' => $request]);
+    }
 }

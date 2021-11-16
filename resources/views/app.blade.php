@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{{url('/person')}}">Index</a>
-          <a class="dropdown-item" href="{{url('/person/send-data')}}">Send Data</a>
+          <a class="dropdown-item" href="{{url('/person/sendData')}}">Send Data</a>
           <a class="dropdown-item" href="{{url('/person/data')}}">Data</a>
           <div class="dropdown-divider"></div>
         </div>
